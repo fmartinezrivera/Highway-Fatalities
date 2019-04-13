@@ -1,8 +1,9 @@
 <?php
 
-$db = new mysqli('localhost', 'root', '12345678', 'highway_fatality');
+$db = new mysqli('localhost', 'root', 'Team_7', 'Highway_Fatality');
 
-if($db->connect_errno > 0){
+if($db->connect_errno > 0)
+{
     die('Unable to connect to database [' . $db->connect_error . ']');
 }
 
