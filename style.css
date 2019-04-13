@@ -1,33 +1,72 @@
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    background-color: #9a3432;
-    color: #fff;
-    font-family: Verdana;
-}
 header{
 	padding: 40px;
 	font-size: 3em;
 	text-align: center;
 	text-shadow: 3px 2px grey;
-	background-color: #9a3432;
+	background-color: #195E1E ;
 	color: #fff;
+	left: -100px;
 	font-family: Verdana;
 }
-//the side panel
-.sidenav {
-		  width: 200px;
-		  position: fixed;
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #195E1E ;
+    color: #fff;
+    font-family: Verdana;
+}
+	#main {
+	  transition: margin-right 0s;
+	  padding: 16px;
+	}
+
+	@media screen and (max-height: 450px) {
+	  .sidenav_left {padding-top: 15px;}
+	  .sidenav_left b {font-size: 18px;}
+	  .sidenav {padding-top: 15px;}
+	  .sidenav a {font-size: 18px;}
+	}
+/* ===================The body itself ===========================*/
+/*==============Color of some words ================*/
+		.White_T {
+			color: white;
+			font-size: 40px;
+		}
+		/* The container */
+		.container {
+		  display: block;
+		  position: relative;
+		  padding-left: 35px;
+		  margin-bottom: 12px;
+		  cursor: pointer;
+		  font-size: 16px;
+		  -webkit-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		  color: white;
+		}
+ /* Set the size of the div element that contains the map */
+      #map{
+			height: 70%;  // The height is 400 pixels
+			width: 500px;  // The width is the width of the web page
+			margin-left: 200px;
+		}
+/*===================This the code for the side bar (right)==============================*/
+		.sidenav {
+		  height: 70%;
+		 	position: fixed;
+		  width: 15%;
 		  z-index: 1;
-		  top: 20px;
-		  left: 8px;
-		  background-color: #9a3432;
+		  top: 128px;
+		  left: 0px;
+		  background-color: #111;
 		  overflow-x: hidden;
-		  padding-top: 8px 0;
 		}
 
 		.sidenav a {
+			top: 10px;
 		  padding: 6px 8px 6px 16px;
 		  text-decoration: none;
 		  font-size: 25px;
@@ -39,4 +78,54 @@ header{
 		  color: #f1f1f1;
 		}
 
+		form.P_Button P_B{
+		  background-color: #4CAF50;
+		  border: none;
+		  color: black;
+		  padding: 15px 24px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 6px 4px;
+		  cursor: pointer;
+		}
+		.main{
+		  margin-left: 200px; /* Same as the width of the sidenav */
+		}
+		form.example input[type=text] {
+		  padding: 10px;
+		  font-size: 17px;
+		  border: 1px solid grey;
+		  float: left;
+		  width: 80%;
+		  background: #f1f1f1;
+		}
 
+		form.example button {
+		  float: left;
+		  width: 20%;
+		  padding: 10px;
+		  background: #2196F3;
+		  color: white;
+		  font-size: 17px;
+		  border: 1px solid grey;
+		  border-left: none;
+		  cursor: pointer;
+		}
+
+		form.example button:hover {
+		  background: #0b7dda;
+		}
+
+		form.example::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+		.h2{
+			 left: 10px;
+			 font-family: Verdana;
+			 color: white;
+			 background: #2196F3;
+		}
